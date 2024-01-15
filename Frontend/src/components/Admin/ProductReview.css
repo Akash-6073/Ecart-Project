@@ -1,0 +1,59 @@
+.productReviewsForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: white; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.267); */
+    border-radius: 15px;
+    /* border-top: 10px solid #FFAC1C; */
+    /* padding: 25px; */
+  }
+  
+  .productReviewsForm > div,#ProductReviewBtn {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    margin: 15px 0;
+  }
+
+  .productReviewsForm > div > input,
+  .productReviewsForm > div > select,
+  .productReviewsForm > div > textarea {
+    padding: 15px 55px;
+    padding-right: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font-family: var(--font3);
+    outline: none;
+    margin: 5px 0;
+  }
+  
+  .productReviewsForm > div > svg {
+    position: absolute;
+    transform: translateX(15px);
+    font-size: 25px;
+    color: black;
+  }
+  #ProductReviewBtn{
+    border: none;
+    background-color: #FFBF00;
+    color: white;
+    font-family: var(--font3);
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    outline: none;
+  }
+  #ProductReviewBtn:hover:enabled {
+    background-color: #e2b625;
+  }
+
+  @media (max-width:570px) {
+    .productReviewsForm > div, #ProductReviewBtn {
+      width: 90%;
+    }
+  }

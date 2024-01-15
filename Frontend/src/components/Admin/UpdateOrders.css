@@ -1,0 +1,253 @@
+.updateOrderDetails{
+    margin: auto;
+    font-family: var(--font3);
+    width: 70%;
+    padding-top: 5px;
+    font-family: var(--font3);
+}
+.updateOrderCfrm{
+    display: flex;
+    width: 80%;
+    /* border-top: 10px solid #FFAC1C; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    border-radius: 10px;
+    padding: 15px;
+}
+.UpdateOrders{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    padding-bottom: 55px;
+    /* width: 350px; */
+}
+.upadateOrderLeft {
+    /* padding: 15px; */
+    border-radius: 5px 5px 0 0;
+    font-family: var(--font3);
+
+}
+.deliveryDetails{
+    width: 65%;
+    padding: 15px 0;
+}
+.deliveryDetails h1{
+    font-family: var(--font3);
+    padding-bottom:15px !important;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    color: rgba(0, 0, 0, 0.778);
+}
+
+.updateOrderRight {
+    /* margin: 0 45px; */
+    float: right;
+    font-family: var(--font3);
+
+}
+.updateItemsright{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.updateOrderId{
+    background-color: rgba(128, 128, 128, 0.115);
+    padding:15px;
+    display: flex;
+    align-items: center;
+}
+ 
+.updateOrderIdLeft{
+    width: 170px;
+    display: inline-block;
+    padding: 10px;
+    background: linear-gradient(90deg, #ffcc00, #ff9900, #ffcc00);
+    background-size: 200% 100%;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 11px;
+    animation: shimmer 3s infinite linear;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+.updateOrderIdRight{
+    width: 80%;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+}
+.updateOrderIdRight a{
+    transform: scale(1);
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+.updateOrderDateAmt{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(128, 128, 128, 0.115);
+    font-family: var(--font3) !important;
+    align-items: flex-end;
+    /* align-items: center; */
+}
+.updateOrderDateAmtLeft{
+    width: 50%;
+}
+.updateOrderDateAmtRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.updateDeliveryTo {
+    /* padding: 15px 30px; */
+    font-size: 20px;
+    /* background: white; */
+    border-radius: 5px;
+    line-height: 20px;
+    /* width: 300px; */
+    font-family: var(--font3);
+    font-size: 15px;
+
+}
+.updateDeliveryTo li{
+    color: rgba(0, 0, 0, 0.76);
+    font-size: 14px !important;
+}
+.updateDeliveryTo p{
+    /* float: right; */
+    display: flex;
+    /* justify-content: flex-end; */
+    font-size: 12px !important;
+    line-height: 15px !important;
+}
+.UpdateOrders h1{
+    font-weight: lighter;
+}
+.updateOrderDateAmt p{
+    font-size: 15px;
+    padding-top: 5px !important;
+}
+.ordered{
+    width: 100px !important;
+    display: inline-block;
+    padding: 5px 10px;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: shimmer 1.5s infinite linear;
+    position: absolute;
+    z-index: 2;
+    font-size: 8px;
+}
+.bgPaid{
+    background-color: white;
+    padding-top: 0 !important;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+}
+ .updateItemsLeft{
+         width: 50%;
+     display: flex;
+ }
+ .updateItemsLeft img{
+
+    width: 45px;
+    margin-right: 15px;
+ }
+.orderStatusUpdate{
+    padding: 15px;
+    width: 350px;
+}
+
+.updateOrderForm {
+    /* margin: 15px 0; */
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  }
+  
+  .updateOrderForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .updateOrderForm > div > select {
+    padding: 10px 35px;
+    margin: 15px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font-family: var(--font3);
+    outline: none;
+  }
+  
+  .updateOrderForm > div > svg {
+    position: absolute;
+    transform: translateX(15px);
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.623);
+  }
+
+  @media (max-width:954px) {
+    .updateOrderDateAmt{
+        flex-direction: column;
+    }
+    .updateOrderDateAmtLeft{
+        /* width: 80% !important; */
+    }
+    .updateOrderDateAmtLeft{
+        width: 100%;
+    }
+    
+  }
+  @media (max-width:685px) {
+    .updateOrderId{
+        flex-direction: column;
+    }
+    .updateOrderIdRight{
+        width: 100% !important;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+  }
+  @media (max-width:600px) {
+    .orderStatusUpdate{
+        width: 100% !important;
+    }
+    .updateOrderForm h2{
+        font-size: 20px !important;
+    }
+    .updateOrderIdLeft{
+        width: 95%;
+    }
+  }
+  @media (max-width:460px) {
+   
+    .updateOrderForm h2{
+        font-size: 15px !important;
+    }
+    .updateOrderIdRight a{
+        font-size: 10px !important;
+    }
+  }
+
+  

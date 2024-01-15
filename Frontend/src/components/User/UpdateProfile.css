@@ -1,0 +1,128 @@
+.updateProfileContainer{
+    height: 100vh;
+    padding-top: 80px;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border-radius:0 5px 5px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+.updateProfileBox{
+    background-color: white;
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border-radius:0 5px 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border-top: 5px solid #2875f0d2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.updateProfileBox h1{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: var(--font3);
+    font-size: 25px;
+}
+.updateProfileBox h1 span{
+    color: #2875f0d2;
+    font-size: 35px;
+}
+ 
+ 
+ 
+
+.updateProfilesignupForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 80%;
+    justify-content:space-evenly;
+    font-family: var(--font3);
+    transition: all 0.5s;
+}
+
+ 
+.updateProfileName,.updateProfileEmail{
+    display: flex;
+    justify-content: center;
+    /* margin: 15px 0; */
+}
+ .updateProfileName i, .updateProfileEmail i{
+    background-color: rgb(232, 240, 254) ;
+    border-radius: 3px 0 0 3px;
+    padding: 15px 20px;
+}
+
+.updateProfilesignupForm div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+ .updateProfilesignupForm div input{
+    padding: 15px 0;
+    border: 0;
+    background-color: rgb(232, 240, 254) ;
+    outline: 0;
+    border-radius:0 3px 3px 0;
+    width: 100%;
+    font-family: var(--font3);
+
+}
+#updateProfileImage{
+    display: flex;
+}
+#updateProfileImage img{
+    height: 45px;
+    border-radius: 100%;
+}
+#updateProfileImage input{
+    display: flex;
+    padding: 0%;
+}
+#updateProfileImage input::file-selector-button{
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: 0;
+    font-family: var(--font3);
+    background-color:none;
+    transition: all 0.2s;
+
+}
+#updateProfileImage input::file-selector-button:hover{
+    background-color: rgba(0, 0, 0, 0.219);
+    color: white;
+}
+.updateProfileBtn{
+    border: none;
+    background-color: #FFBF00;
+    color: white;
+    font: var(--font3);
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 5px;
+    outline: 0;
+    font-family: var(--font2);
+}
+.updateProfileBtn:hover{
+    background-color: #e2b625;
+
+}
+
+ 

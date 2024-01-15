@@ -1,0 +1,87 @@
+.allProducts{
+    padding-top: 35px;
+    width: 80%;
+    padding-bottom: 95px;
+
+
+}
+.allProducts h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.778);
+    /* font-weight: lighter; */
+    font-family: var(--font4);
+}
+.adminEditProduct{
+    transform: scale(1) !important;
+    color: rgba(0, 0, 0, 0.388);
+    display: flex;
+}
+.adminEditProduct:hover{
+color: #FFAC1C;
+}
+.productActions{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+}
+.productActions button{
+    color: rgba(0, 0, 0, 0.388);
+}
+.productListTable{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* POPUP */
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+@media (max-width:720px) {
+.createProductForm{
+    width: 95% !important;
+}
+    
+}

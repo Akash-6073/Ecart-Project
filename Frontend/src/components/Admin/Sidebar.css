@@ -1,0 +1,69 @@
+.sidebar {
+    background-color: #29333a;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    width: 270px;
+    min-height: 100vh;
+    width: 20%;
+    margin-right:15px;
+
+  }
+  .userAvatar{
+    display: flex;
+    align-items: center;
+    word-break: break-all;
+    padding: 15px 5px !important;
+    background-color: #b6d6ee2a;
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  .helloAdmin{
+    padding:20px!important;
+    color: white;
+    font-family: var(--font3);
+  }
+  .userAvatar img{
+    width: 55px;
+    border-radius: 100%;
+  }
+  .userAvatar div{
+    padding: 0 5px;
+  }
+  .sidebar > a:first-child {
+    padding: 0;
+  }
+  
+ 
+  .sidebar a {
+    color: white;
+    text-decoration: none !important;
+    font-family: var(--font3);
+    padding: 20px;
+    transition: all 0.5s;
+
+  }
+  .sidebar a:hover {
+    background-color: #b6d6ee2a;
+    transform: scale(1) !important;
+  }
+  
+  .sidebar a > P {
+    display: flex;
+    align-items: center;
+  }
+  .sidebar a > p > svg {
+    margin-right: 0.5rem;
+  }
+  
+  /* .MuiTypography-root {
+    background-color: #fff !important;
+  } */
+
+  .activeSidebar{
+    background-color: #b6d6ee51 !important;
+
+  }

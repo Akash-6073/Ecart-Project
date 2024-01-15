@@ -1,0 +1,13 @@
+.noOrders{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.noOrders img{
+    height: 20vmax;
+}
+.noOrders h2{
+    font-size: 25px;
+    font-family: var(--font3);
+}

@@ -1,0 +1,107 @@
+.shippingContainer {
+    padding-top: 80px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* background-color: white; */
+    padding-bottom: 65px;
+
+  }
+  
+  .shippingBox {
+    /* background-color: white; */
+    border-radius: 5px;
+    width: 400px;
+    height: 100%;
+    box-sizing: border-box;
+    /* border-top: 10px solid orange; */
+  }
+  
+  .shippingHeading {
+    text-align: center;
+    color: black;
+    font-family: var(--font3);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.205); */
+    width: 80%;
+    margin: auto;
+    font-weight: lighter;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.778);
+    padding-bottom: 10px;
+
+    
+  }
+  
+  .shippingForm {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 25px;
+    justify-content: space-evenly;
+    /* height: 80%; */
+    transition: all 0.5s;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+  
+  .shippingForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 5px 0;
+  }
+  
+  .shippingForm > div > input,
+  .shippingForm > div > select {
+    padding: 15px 65px;
+    padding-right: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font-family: var(--font3);
+    outline: none;
+  }
+  
+  .shippingForm > div > svg {
+    position: absolute;
+    transform: translateX(15px);
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.623);
+  }
+  
+  .shippingBtn {
+    border: none;
+    background-color: #FFBF00;
+    color: white;
+    font-family: var(--font2);
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+    margin: 15px;
+  }
+  
+  .shippingBtn:hover {
+    background-color: #e2b625;
+  }
+
+ @media (max-width:450px) {
+  .shippingBox{
+    width: 95vw;
+  }
+  .shippingHeading{
+    font-size: 22px;
+  }
+  
+  
+ }

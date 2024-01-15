@@ -1,0 +1,111 @@
+.newProductContainer {
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+    align-items: center;
+    padding-bottom: 75px;
+
+  }
+  .newProductContainer h1 {
+    text-align: center;
+    /* padding: 10px; */
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.778);
+    /* font-weight: lighter; */
+    font-family: var(--font4);
+  }
+  
+  .createProductForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: auto; */
+    justify-content: space-evenly;
+    height: 600px;
+    width: 450px;
+    /* background-color: white; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.267); */
+    border-radius: 15px;
+    /* border-top: 10px solid #FFAC1C; */
+  }
+  
+  .createProductForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .createProductForm > div > input,
+  .createProductForm > div > select,
+  .createProductForm > div > textarea {
+    padding: 15px 55px;
+    padding-right: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font-family: var(--font3);
+    outline: none;
+    margin: 5px 0;
+  }
+  
+  .createProductForm > div > svg {
+    position: absolute;
+    transform: translateX(15px);
+    font-size: 25px;
+    color: black;
+  }
+  
+  #createProductFormFile > input {
+    display: flex;
+    padding: 0%;
+  }
+  
+  #createProductFormFile > input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 45px;
+    border: none;
+    margin: 0%;
+    font-family: var(--font3);
+    transition: all 0.5s;
+    padding: 0 15px;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #createProductFormFile > input::file-selector-button:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  
+  #createProductFormImage {
+    width: 100%;
+    overflow: auto;
+  }
+  
+  #createProductFormImage > img {
+    width: 55px !important;
+    margin: 0 8px;
+  }
+  #createProductBtn {
+    border: none;
+    background-color: #FFBF00;
+    color: white;
+    font-family: var(--font3);
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    outline: none;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219); */
+  }
+  
+  #createProductBtn:hover {
+    background-color: #e2b625;
+  }
+  
+ 

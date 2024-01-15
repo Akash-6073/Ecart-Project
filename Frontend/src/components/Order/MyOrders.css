@@ -1,0 +1,161 @@
+.userOrders
+{
+  height: 90vh;
+}
+
+.myOrdersPage {
+    width: 1500px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 25px;
+    margin: auto;
+    height: 100vh;
+  }
+  .myOrdersPage h1 {
+    font-family: var(--font3);
+    padding-bottom:15px !important;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    color: rgba(0, 0, 0, 0.778);
+    
+    
+  }
+  #myOrdersHeading {
+    text-align: center;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    
+    transition: all 0.5s;
+    background-color: black;
+    padding: 15px 0;
+    font-size: 20px;
+    font-family: var(--font3) !important;
+    border-radius: 0 0 5px 5px;
+
+  }
+  
+  .myOrdersTable {
+    background-color: white;
+    /* box-shadow: 0 5px 5px hsla(0,0%,50.2%,.27843); */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border: 0 !important;
+
+
+  }
+  
+  .myOrdersTable div {
+    border: none;
+  }
+  
+  .myOrdersTable a {
+    color: rgba(0, 0, 0, 0.247);
+    transition: all 0.5s;
+  }
+  
+  .myOrdersTable a:hover {
+    color: #FFBF00;
+    
+  }
+  
+  .MuiDataGrid-columnHeader {
+    background-color: white;
+    
+    padding: 15px !important;
+    font-size: 20px !important;
+    font-family: var(--font3) !important;
+
+  }
+  .MuiDataGrid-root .MuiDataGrid-columnsContainer{
+    border-bottom: 0 !important;
+    box-shadow: 0 5px 5px hsla(0,0%,50.2%,.27843);
+    border-radius: 10px !important;
+
+
+  }
+  .MuiDataGrid-root .MuiDataGrid-columnHeaderTitleContainer{
+    padding: 0 !important;
+    
+  }
+  .MuiDataGrid-root .MuiDataGrid-columnHeader--alignRight .MuiDataGrid-columnHeaderDraggableContainer ,.MuiDataGrid-root .MuiDataGrid-columnHeader--alignRight .MuiDataGrid-columnHeaderTitleContainer{
+    flex-direction: row !important;
+    width: 100%;
+    justify-content: center;
+    
+  }
+  
+  .MuiDataGrid-root .MuiDataGrid-cell--textRight{
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .MuiDataGrid-root .MuiDataGrid-cell--textRight.MuiDataGrid-cell--withRenderer{
+    justify-content: flex-start;
+  }
+  .MuiDataGrid-root .MuiDataGrid-menuIcon {
+    display: none !important;
+  }
+  .MuiDataGrid-columnHeader div {
+    color:rgba(0, 0, 0, 0.699) !important;
+    font-weight: 700 !important;
+  }
+  
+  .MuiDataGrid-iconSeparator {
+    display: none !important;
+  }
+  .MuiDataGrid-root .MuiDataGrid-columnHeader, .MuiDataGrid-root .MuiDataGrid-cell{
+    padding: 1px 10px !important;
+    
+  }
+  .MuiDataGrid-root .MuiDataGrid-columnHeaderTitleContainer{
+    
+  }
+  
+  /* @media screen and (max-width: 600px) {
+    .myOrdersPage {
+      padding: 0;
+      height: 100vh;
+      width: 80vw;
+    }
+  
+    #myOrdersHeading {
+      padding: 4vw;
+    }
+  
+    .myOrdersTable div {
+    }
+  
+    .MuiDataGrid-columnHeader {
+      padding: 20px !important;
+    }
+  
+    .MuiDataGrid-columnHeader div {
+    }
+  } */
+
+@media (max-width:1500px) {
+  .myOrdersPage{
+    width: 95vw;
+  }
+  .MuiDataGrid-windowContainer{
+    width: 95vw !important;
+  }
+  
+}
+@media (max-width:600px) {
+  .MuiDataGrid-columnHeaderTitle{
+    font-size: 20px;
+  }
+}
+@media (max-width:460px) {
+  .MuiDataGrid-columnHeaderTitle{
+    font-size: 17px;
+  }
+  .myOrdersPage h1{
+    padding-top: 35px;
+  }
+}

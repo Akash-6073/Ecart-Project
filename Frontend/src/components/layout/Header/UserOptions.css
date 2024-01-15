@@ -1,0 +1,21 @@
+.speedDial{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    margin: 14px 5px;
+    background-color: none;
+}
+.speedDialIcon{
+    /* height: 56px; */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.MuiFab-primary {
+    background-color: white !important;
+    width: 35px !important;
+    height: 35px !important;
+    /* box-shadow: none !important; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; */
+    transform: scale(1.1) !important;
+}

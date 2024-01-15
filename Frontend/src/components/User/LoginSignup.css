@@ -1,0 +1,226 @@
+.loginSignup {
+  height: 100%;
+  /* height: 90vh; */
+  padding-bottom: 35px;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loginDesign {
+  display: flex;
+}
+.loginBox {
+  height: 500px;
+  width: 300px;
+  background-color: #2875f0d2;
+  color: white;
+  background-blend-mode: normal, color-burn;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px 0 0 5px;
+}
+.loginBox img {
+  height: auto;
+}
+.loginSignupBox {
+  background-color: white;
+  height: 500px;
+  width: 400px;
+  overflow: hidden;
+  box-sizing: border-box;
+  /* box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  border-radius: 0 5px 5px 0;
+}
+.loginSignupToggle {
+  display: flex;
+  height: 35px;
+}
+.loginSignupToggle p {
+  color: rgba(0, 0, 0, 0.66);
+  font-family: var(--font3);
+  transition: all 0.5s;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+.loginSignupToggle p :hover {
+  color: tomato;
+}
+.loginSignupBox div button {
+  background-color: #0082e6;
+  height: 3px;
+  width: 50%;
+  border: none;
+  transition: all 0.5s;
+}
+
+.loginForm,
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  height: 80%;
+  justify-content: space-evenly;
+  font-family: var(--font3);
+  transition: all 0.5s;
+}
+
+.signupForm {
+  transform: translateY(-100%) translateX(-100vmax);
+}
+.loginEmail,
+.loginPassword {
+  display: flex;
+  justify-content: center;
+  /* margin: 15px 0; */
+}
+.loginEmail i,
+.loginPassword i,
+.signUpName i,
+.signUpPassword i,
+.signUpEmail i {
+  background-color: rgb(232, 240, 254);
+  border-radius: 3px 0 0 3px;
+  padding: 15px 20px;
+}
+
+.loginForm div,
+.signupForm div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.loginForm div input,
+.signupForm div input {
+  padding: 15px 0;
+  border: 0;
+  background-color: rgb(232, 240, 254);
+  outline: 0;
+  border-radius: 0 3px 3px 0;
+  width: 100%;
+  font-family: var(--font3);
+}
+.loginForm a {
+  color: rgba(0, 0, 0, 0.585);
+  text-decoration: none;
+  align-self: flex-end;
+  transition: all 0.5s;
+  transform: none !important;
+}
+.loginForm a:hover {
+  color: black;
+}
+#registerImage img {
+  height: 45px;
+  border-radius: 100%;
+}
+#registerImage input {
+  display: flex;
+  padding: 0%;
+}
+#registerImage input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: 0;
+  font-family: var(--font3);
+  background-color: none;
+  transition: all 0.2s;
+}
+#registerImage input::file-selector-button:hover {
+  background-color: rgba(0, 0, 0, 0.219);
+  color: white;
+}
+.loginBtn,
+.signUpBtn {
+  border: none;
+  background-color: #ffbf00;
+  color: white;
+  font: var(--font3);
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 5px;
+  outline: 0;
+}
+.loginBtn:hover,
+.signUpBtn:hover {
+  background-color: #e2b625;
+}
+
+/* Shifting */
+.shiftToLeft {
+  transform: translateX(-100%);
+}
+.shiftToNeutral {
+  transform: translateX(0%);
+}
+.shiftToNeutralForm {
+  transform: translateX(0%) translateY(-100%);
+}
+.shiftToRight {
+  transform: translateX(100%);
+}
+
+@media (max-width: 750px) {
+  .loginDesign {
+    width: 90vw;
+    margin: auto;
+  }
+  .loginBox {
+    width: 40%;
+  }
+  .loginSignupBox {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .loginSignup {
+    padding-top: 140px;
+  }
+  .loginBox,
+  .loginSignupBox {
+    height: 350px;
+  }
+  .loginForm div input,
+  .signupForm div input {
+    padding: 8px 0;
+    margin: 6px 0;
+  }
+  .loginBox div h1 {
+    font-size: 20px;
+  }
+  .loginBox div p {
+    font-size: 10px;
+  }
+  .loginEmail i,
+  .loginPassword i,
+  .signUpName i,
+  .signUpPassword i,
+  .signUpEmail i {
+    padding: 8px 20px !important;
+  }
+  .loginForm a {
+    font-size: 10px;
+  }
+  .loginBtn,
+  .signUpBtn {
+    padding: 8px;
+  }
+  #registerImage img{
+    height: 28px;
+  }
+}
+@media (max-width: 460px) {
+}

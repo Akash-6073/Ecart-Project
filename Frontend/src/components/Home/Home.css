@@ -1,0 +1,403 @@
+.banner{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); */
+    padding-top: 90px;
+    width: 1500px;
+    margin: auto;
+}
+/* .banner p,.banner h1,.banner button{
+    margin: 25px 0;
+}
+.banner h1{
+    font-family: var(--font3);
+}
+
+.banner::after{
+    content: "";
+    width: 100vw;
+    height: 100vmin;
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    clip-path: polygon(100% 0, 0 0, 100% 29%);
+    max-width: 100%;
+} */
+.cats{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 25px;
+}
+.catsgory{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 0;
+}
+.catsgory div {
+    border-radius: 100%;
+    height: 130px;
+    width: 130px;
+    /* padding: 55px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 5px hsla(0,0%,50.2%,.27843);
+    transition: all 0.3s;
+    font-family: var(--font3);
+}
+.catsgory div img{
+    height: 65px;
+    /* width: 45px; */
+    /* border-radius: 50%; */
+    overflow: hidden;
+}
+.catsgory div:hover{
+    transform: scale(1.1);
+}
+.slides{
+    height: 250px;
+    width: 1500px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0;
+
+}
+.slides img{
+    height: 280px;
+    padding: 0 75px;
+} 
+.slides div {
+    font-family: var(--font3);
+    color: white;
+}
+.slides div h1{
+    font-weight: lighter;
+}
+.slides div p {
+    font-size: 15px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.584) !important;
+}
+.sponsored{
+    display: flex;
+}
+
+.btn1{
+    background-color: black !important;
+    color: white;
+    border: 1px solid white !important;
+}
+.btn1:hover{
+    background-color: rgba(0, 0, 0, 0.612) !important;
+}
+ 
+.Suggested{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    background-color: white;
+    margin: auto;
+    font-family: var(--font4);
+
+}
+.Suggested h1{
+    /* font-weight: lighter; */
+    font-size: 25px;
+    margin: 15px 0;
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.508); */
+    padding: 3px 0;
+}
+.suggestedForyou a{
+    text-decoration: none;
+    transform: scale(1);
+}
+.suggestedForyou a img{
+    height: 140px;
+    transition: all 0.3s;
+}
+.suggestedForyou a img:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.suggestedForyou{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 35px 0;
+}
+.suggestedForyou div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#container h2{
+}
+.homeHeading{
+    text-align: center;
+    /* margin-top: 25px; */
+    padding: 15px 0 !important;
+    font-family: var(--font3) !important;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.778);
+
+}
+#container{
+    background-color: white;
+    width: 1500px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+.container{
+    width: 1400px;
+    /* border: 2px solid red; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.productCard{
+    display: flex;
+    width: 260px;
+    flex-direction: column;
+    justify-content: center;
+    ;
+    /* border: 2px solid red; */
+    cursor: auto !important;
+    font-family: var(--font2);
+    /* border: 1px solid rgba(128, 128, 128, 0.423); */
+    border-radius: 5px;
+    background-color: white;
+    margin: 25px 15px;
+    height: 100%;
+    box-shadow: 0 5px 5px hsla(0,0%,50.2%,.27843);
+
+    /* border-bottom: 10px solid white; */
+    /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19); */
+
+    
+}
+.productCard:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: none;
+    transition: box-shadow 0.5s;
+    /* border-bottom: solid rgb(52, 145, 238); */
+    color: #0082e6;
+    font-weight: bold;
+
+}
+.productCard button{
+    width: 45px;
+    /* margin: 0 14px; */
+    border: 0;
+    color: white;
+    padding: 3px 0 ;
+    border-radius: 0 3px 3px 0;
+}
+.bestSeller{
+    width: 100px !important;
+    display: inline-block;
+    padding: 5px 10px;
+    background: linear-gradient(90deg, #ffcc00, #ff9900, #ffcc00); /* Adjust colors */
+    background-size: 200% 100%;
+    color: #fff; /* Text color */
+    border-radius: 5px;
+    font-weight: bold;
+    animation: shimmer 1.5s infinite linear;
+    position: absolute;
+    z-index: 2;
+}
+@keyframes shimmer {
+    0% {
+      background-position: -200%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
+.bestSellerNone{
+    display: none;
+}
+.productCard img{
+    /* width: 240px; */
+    transform: scale(0.9);
+    transition: all 0.4s;
+    height: 250px;
+
+}
+.productCard img:hover{
+    transform: scale(1);
+    cursor: pointer;
+    margin: 0;
+}
+.productCard div{
+    display: flex;
+    align-items: center !important;
+    margin: 14px 14px ;
+}
+.pcRate{
+    margin: 0 !important;
+    justify-content: space-between;
+    left: -1;
+}
+.productCard p,.price{
+    margin: 0 14px;
+
+}
+.productCard p{
+    font-size: 15px;
+    overflow: hidden;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: none !important;
+}
+.productCard p:hover{
+    color: #0082e6;
+    cursor: pointer;
+}
+.price{
+    color: black !important;
+    font-weight: bold;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+.paymnetOptions{
+    width: 1500px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+    text-align: center;
+    font-family: var(--font3);
+    margin: auto;
+    margin-top: 15px ;
+    margin-bottom: 15px ;
+}
+.paymnetOptions div {
+    /* padding: 0 70px; */
+}
+.paymnetOptions div h1{
+    color: #0082e6;
+    /* color: orange; */
+}
+.paymnetOptions div h1 svg{
+    font-size: 50px;
+}
+.paymnetOptions div p{
+    font-size: 20px;
+}
+.paymnetOptions div span{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+@media (max-width:1542px) {
+    .banner,.slides,#container,.Suggested,.paymnetOptions{
+        width: 95vw;
+    }
+}
+@media (max-width:1410px)
+{
+    
+    .container{
+        width: 100%;
+    }
+    .productCard{
+        margin: 25px 10px;
+        
+    }
+}
+@media (max-width:1190px)
+{
+    .catsgory{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .catsgory div{
+        margin: 10px 10px;
+        height: 80px;
+        width: 80px;
+    }
+    .catsgory div p{
+        font-size: 10px;
+    }
+    
+    .catsgory div img{
+        height: 45px;
+    }
+    .slides{
+        height: 100%;
+        padding: 35px;
+    }
+}
+@media (max-width:900px) {
+    .slides img {
+        height:160px;
+    padding: 0 15px;
+
+    }
+    .slides div h1 {
+        font-size: 20px;
+    }
+    .Suggested{
+        margin-bottom: 25px;
+    }
+    .suggestedForyou{
+        flex-wrap: wrap;
+    }
+    .suggestedForyou div{
+        margin: 15px 10px;
+    }
+    .suggestedForyou div img{
+        height: 100px;
+    }
+    .paymnetOptions{
+        display: none;
+    }
+    .paymnetOptions div{
+        margin: 25px;
+    }
+    .foot{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .foot div{
+        justify-content: center;
+        align-items: center !important ;
+        text-align: center;
+        padding: 0 35px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+
+    }
+    .copyRight{
+        flex-wrap: wrap;
+        justify-content: center !important;
+        align-items: center;
+        text-align: center;
+    }
+    .copyRight a,.copyRight p,.copyRight img{
+        margin: 15px;
+    }
+    
+}
+
+

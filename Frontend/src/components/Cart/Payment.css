@@ -1,0 +1,97 @@
+ .paymentContainer {
+    padding-top: 80px;
+    height: 100%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 35px;
+    /* background-color: white; */
+  }
+  
+  
+  .paymentBox {
+    border-radius: 5px;
+    width: 350px;
+    box-sizing: border-box;
+    /* margin-top: 25px; */
+  }
+  
+  .paymentHeading {
+    text-align: center;
+    font-family: var(--font3);
+    /* padding: 10px 0; */
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.205); */
+    width: 80%;
+    margin: auto;
+    font-weight: lighter;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.778);
+  }
+  .paymentForm {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 25px;
+    justify-content: space-evenly;
+    /* height: 80%; */
+    transition: all 0.5s;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  .paymentForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .paymentInput {
+    padding: 22px 65px;
+    padding-right: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font-family: var(--font3);
+    outline: none;
+    background-color: white;
+  }
+  
+  .paymentForm > div > svg {
+    position: absolute;
+    transform: translateX(15px);
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.623);
+  }
+  
+  .paymentFormBtn {
+    border: none;
+    background-color: #FFBF00;
+    color: white;
+    font-family: var(--font3);
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+    margin: 15px;
+    font-size: 18px;
+  }
+  
+  .paymentFormBtn:hover {
+    background-color: #e2b625;
+  }
+
+ @media (max-width:390px)
+ {
+  .paymentBox{
+    width: 90vw;
+  }
+ }

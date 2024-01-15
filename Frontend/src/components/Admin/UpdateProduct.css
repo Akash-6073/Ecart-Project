@@ -1,0 +1,25 @@
+.updateProductContainer{
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+    font-family: var(--font3);
+}
+.updateProductForm{
+color: black;
+background-color: white;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+border-top: 10px solid #FFAC1C;
+/* margin: auto; */
+padding: 15px;
+}
+.createProductForm div img{
+    width: 55px;
+    margin: 0 8px;
+}
+#updateProductFormImage{
+    width: 100%;
+    overflow: auto;
+}

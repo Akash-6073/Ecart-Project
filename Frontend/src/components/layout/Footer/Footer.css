@@ -1,0 +1,66 @@
+.foot{
+  display: flex;
+  justify-content: center;
+  /* margin-top: 35px; */
+  background-color: #172337;
+}
+.foot div{
+  margin: 25px;
+  margin-left: 55px;
+  margin-right: 55px;
+  font-family: var(--font3);
+
+}
+.footBook{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footBook h2{
+  color: rgba(255, 255, 255, 0.808);
+}
+.footHeading{
+  color: #878787 !important;
+  list-style: none !important;
+  text-decoration: none !important;
+  cursor: auto;
+
+}
+.unorderLi li{
+  list-style: none;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.873);
+  font-size: 14px;
+  line-height: 30px;
+}
+.unorderLi li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.playstore img{
+  height: 85px;
+}
+.copyRight{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 85px;
+  border-top: 1px solid #454d5e;
+  background-color: #172337;
+  color: white !important;
+  font-family: var(--font3);
+  font-size: 14px;
+
+
+}
+.copyRight a{
+  text-decoration: none;
+  list-style: none;
+  transform: scale(1);
+  color: white;
+}
+.copyRight img{
+  height: 35px;
+}
