@@ -49,7 +49,7 @@ function App() {
   //  GETTING   AXIOS ERROR
   async function getStripeApiKey(){
     try {
-      const response = await axios.get('https://ecart1.onrender.com/api/v1/stripeapiKey', {
+      const response = await axios.get('https://ecartserver.onrender.com/api/v1/stripeapiKey', {
         headers: {
           'Content-Type': 'application/json',
         },

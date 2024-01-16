@@ -51,7 +51,7 @@ const Payment = () => {
 
         try {
         const config = {headers:{"Content-Type":"application/json"}}
-        const {data} = await axios.post("https://ecart1.onrender.com/api/v1/payment/process",paymentData,config)
+        const {data} = await axios.post("https://ecartserver.onrender.com/api/v1/payment/process",paymentData,config)
         const client_secret = data.client_secret;
         
         if(!stripe || !elements) return;

@@ -38,10 +38,10 @@ async (dispatch) => {
   try {
     dispatch({ type: ALL_PRODUCT_REQUEST });
 
-    let link = `https://ecart1.onrender.com/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`;
+    let link = `https://ecartserver.onrender.com/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`;
 
     if (category) {
-      link = `https://ecart1.onrender.com/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}&ratings[gte]=${ratings}`;
+      link = `https://ecartserver.onrender.com/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}&ratings[gte]=${ratings}`;
     }
 
     const { data } = await axios.get(link);
@@ -63,7 +63,7 @@ export const getProductDetails = (id) => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_DETAILS_REQUEST });
 
-    const { data } = await axios.get(`https://ecart1.onrender.com/api/v1/product/${id}`);
+    const { data } = await axios.get(`https://ecartserver.onrender.com/api/v1/product/${id}`);
     dispatch({
       type: PRODUCT_DETAILS_SUCCESS,
       payload: data.product,
@@ -85,7 +85,7 @@ export const createProduct = (productData) => async (dispatch) => {
       headers: { "Content-Type": "application/json" },
     };
       console.log("came here producr action")
-    const { data } = await axios.post(`https://ecart1.onrender.com/api/v1/admin/product/new`,
+    const { data } = await axios.post(`https://ecartserver.onrender.com/api/v1/admin/product/new`,
       productData,
       config
     );
@@ -113,7 +113,7 @@ export const updateProduct = (id, productData) => async (dispatch) => {
     };
 
     const { data } = await axios.put(
-      `https://ecart1.onrender.com/api/v1/admin/product/${id}`,
+      `https://ecartserver.onrender.com/api/v1/admin/product/${id}`,
       productData,
       config
     );
@@ -137,7 +137,7 @@ export const deleteProduct = (id) => async (dispatch) => {
   try {
     dispatch({ type: DELETE_PRODUCT_REQUEST });
 
-    const { data } = await axios.delete(`https://ecart1.onrender.com/api/v1/admin/product/${id}`);
+    const { data } = await axios.delete(`https://ecartserver.onrender.com/api/v1/admin/product/${id}`);
 
     dispatch({
       type: DELETE_PRODUCT_SUCCESS,
@@ -157,7 +157,7 @@ export const getAdminProduct = () => async (dispatch) => {
   try {
     dispatch({ type: ADMIN_PRODUCT_REQUEST });
 
-    const { data } = await axios.get("https://ecart1.onrender.com/api/v1/admin/products");
+    const { data } = await axios.get("https://ecartserver.onrender.com/api/v1/admin/products");
 
     dispatch({
       type: ADMIN_PRODUCT_SUCCESS,
@@ -182,7 +182,7 @@ export const newReview = (reviewData) => async (dispatch) => {
       headers: { "Content-Type": "application/json" },
     };
 
-    const { data } = await axios.put(`https://ecart1.onrender.com/api/v1/review`, reviewData, config);
+    const { data } = await axios.put(`https://ecartserver.onrender.com/api/v1/review`, reviewData, config);
 
     dispatch({
       type: NEW_REVIEW_SUCCESS,
@@ -201,7 +201,7 @@ export const getAllReviews = (id) => async (dispatch) => {
   try {
     dispatch({ type: ALL_REVIEW_REQUEST });
 
-    const { data } = await axios.get(`https://ecart1.onrender.com/api/v1/reviews?id=${id}`);
+    const { data } = await axios.get(`https://ecartserver.onrender.com/api/v1/reviews?id=${id}`);
 
     dispatch({
       type: ALL_REVIEW_SUCCESS,
@@ -221,7 +221,7 @@ export const deleteReviews = (reviewId, productId) => async (dispatch) => {
     dispatch({ type: DELETE_REVIEW_REQUEST});
 
     const { data } = await axios.delete(
-      `https://ecart1.onrender.com/api/v1/reviews?id=${reviewId}&productId=${productId}`
+      `https://ecartserver.onrender.com/api/v1/reviews?id=${reviewId}&productId=${productId}`
     );
 
     dispatch({
